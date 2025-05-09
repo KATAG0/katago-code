@@ -2,14 +2,14 @@
 #include<stdio.h>
 #define SIZE 20
 
-// 함수 선언
+
 void reserveSeat(int list[], int reservationnumbers[], int* yeahyarkhyunghuang);
 void checkReservation(int list[], int reservationnumbers[]);
 void changeReservation(int list[], int reservationnumbers[]);
 void cancelReservation(int list[], int reservationnumbers[], int* yeahyarkhyunghuang);
 void printReservationStatus(int list[], int reservationnumbers[], int yeahyarkhyunghuang);
-int validateSeatNumber(int seatNumber); //좌석번효유효검사
-int validateCustomerNumber(int customerNumber);// 고객번호유효검사
+int validateSeatNumber(int seatNumber); 
+int validateCustomerNumber(int customerNumber);
 
 int main() {
     int select;
@@ -35,7 +35,7 @@ int main() {
             cancelReservation(list, reservationnumbers, &yeahyarkhyunghuang);
             break;
         case 9:
-            printReservationStatus(list, reservationnumbers, yeahyarkhyunghuang); // 수정된 부분
+            printReservationStatus(list, reservationnumbers, yeahyarkhyunghuang);
             return 0;
         default:
             printf("잘못된 입력입니다. 다시 시도하세요.\n");
